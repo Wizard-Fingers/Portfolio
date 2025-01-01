@@ -8,13 +8,23 @@ const PageTransition = ({ children }) => {
   return (
     <AnimatePresence>
       <div key={pathname}>
+        {/* Main transition layer */}
         <motion.div
           initial={{ opacity: 1 }}
           animate={{
             opacity: 0,
             transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
           }}
-          className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
+          className="h-screen w-screen fixed bg-gradient-to-br from-primary via-secondary to-primary top-0 pointer-events-none"
+        />
+        {/* Optional: Subtle overlay for extra depth */}
+        <motion.div
+          initial={{ opacity: 0.3 }}
+          animate={{
+            opacity: 0,
+            transition: { delay: 0.8, duration: 0.4, ease: "easeInOut" },
+          }}
+          className="h-screen w-screen fixed bg-gradient-to-tr from-accent/10 via-transparent to-accent/5 top-0 pointer-events-none"
         />
         {children}
       </div>

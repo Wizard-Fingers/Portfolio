@@ -5,49 +5,40 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
   FaNodeJs,
+  FaPython,
 } from "react-icons/fa";
-
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 // about data
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "From Anglican minister to police officer to web developer - my unconventional path brings a unique perspective to tech. Since 2021, I've merged my background in theology and public service with modern web development, earning a diploma from Birmingham University along the way. This diverse experience helps me create more thoughtful, user-focused solutions. A proper cup of tea fuels my coding adventures.",
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Luke Coleman",
+      fieldValue: "Art Beckett",
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+40) 321 654 678",
+      fieldValue: "(+44) 792 5578 819",
     },
     {
       fieldName: "Experience",
-      fieldValue: "12+ Years",
+      fieldValue: "5+ Years",
     },
     {
       fieldName: "Skype",
-      fieldValue: "luke.01",
+      fieldValue: "art.b.beckett",
     },
     {
       fieldName: "Nationality",
-      fieldValue: "American",
+      fieldValue: "British",
     },
     {
       fieldName: "Email",
-      fieldValue: "luke.01@gmail.com",
-    },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available",
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "English, Spanish",
+      fieldValue: "art.b.beckett@gmail.com",
     },
   ],
 };
@@ -57,37 +48,52 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "With over 5 years as a frontend developer, I specialize in crafting elegant user interfaces and pixel-perfect web applications. I transform complex challenges into engaging experiences by blending technical expertise with creative design thinking. Always exploring new technologies to deliver clean, modern, and innovative solutions that users love.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "Freelance",
+      position: "Contracted Web Developer",
+      duration: "July 2024 - Present",
     },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
-      duration: "Summer 2021",
+      company: "Belford Technologies",
+      position: "UI Engineer",
+      duration: "Aug - July 2024",
     },
     {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
+      company: "Inception",
+      position: "Wordpress Developer",
+      duration: "June - Aug 2024",
     },
     {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
+      company: "Freelance",
+      position: "Contracted Web Developer",
+      duration: "Jan - May 2024",
     },
     {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
+      company: "Bear Digital",
+      position: "Agency Owner",
+      duration: "Aug 2023 - Jan 2024",
     },
     {
-      company: "Software Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018",
+      company: "TechJoy",
+      position: "Frontend Developer ",
+      duration: "Jun 2023 - Oct 2023",
+    },
+    {
+      company: "HodgesNet",
+      position: "Web Developer",
+      duration: "Mar 2023 - May 2023",
+    },
+    {
+      company: "TechJoy",
+      position: "Web & App Developer",
+      duration: "May 2022 - Dec 2022",
+    },
+    {
+      company: "Freelance",
+      position: "Contracted Web Developer",
+      duration: "Mar 2019 - May 2022 ",
     },
   ],
 };
@@ -97,37 +103,42 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "Bringing a unique perspective from my background as an Anglican minister and police officer, I made the transition to tech in 2019. Since then, I've completed two intensive bootcamps, earned a diploma in Web Development from Birmingham University, and combined my previous experience in theology with technical expertise to create more thoughtful, user-focused digital solutions.",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      institution: "Birmingham University via Iungo Solutions",
+      degree: "Software Development Certificate",
+      duration: "2024",
     },
     {
-      institution: "Codecademy",
-      degree: "Front-end Track",
-      duration: "2022",
+      institution: "IT Career Switch",
+      degree: "Full Stack Certifications",
+      duration: "2021",
     },
     {
-      institution: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021",
+      institution: "St Helena Police Service",
+      degree: "Digital Evidence Certification",
+      duration: "2010 - 2020",
     },
     {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
+      institution: "St Helena Police Service",
+      degree: "Firearms Certification",
+      duration: "2010 - 2020",
     },
     {
-      institution: "Design School",
-      degree: "Diploma in Graphic Design",
-      duration: "2016 - 2018",
+      institution: "St Helena Police Service",
+      degree: "Police Sergeant Examination",
+      duration: "2010 - 2020",
     },
     {
-      institution: "Community College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2014 - 2016",
+      institution: "Entrust",
+      degree: "Diploma in Biblical Theology",
+      duration: "Pre-2010",
+    },
+    {
+      institution: "South Africa",
+      degree: "Matriculation Certificate",
+      duration: "Pre-2004",
     },
   ],
 };
@@ -136,7 +147,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "Mastering the core web technologies while continuously expanding my toolkit. Specializing in React ecosystem and modern JavaScript, with hands-on experience in full-stack development using Next.js and Node.js.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -167,21 +178,19 @@ const skills = {
       name: "node.js",
     },
     {
-      icon: <FaFigma />,
-      name: "figma",
+      icon: <FaPython />,
+      name: "python",
     },
   ],
 };
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
@@ -193,7 +202,7 @@ const Resume = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 bg-primary"
     >
       <div className="container mx-auto">
         <Tabs
@@ -201,10 +210,30 @@ const Resume = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger
+              value="experience"
+              className="bg-secondary hover:bg-tertiary data-[state=active]:bg-accent data-[state=active]:text-primary transition-all duration-300"
+            >
+              Experience
+            </TabsTrigger>
+            <TabsTrigger
+              value="education"
+              className="bg-secondary hover:bg-tertiary data-[state=active]:bg-accent data-[state=active]:text-primary transition-all duration-300"
+            >
+              Education
+            </TabsTrigger>
+            <TabsTrigger
+              value="skills"
+              className="bg-secondary hover:bg-tertiary data-[state=active]:bg-accent data-[state=active]:text-primary transition-all duration-300"
+            >
+              Skills
+            </TabsTrigger>
+            <TabsTrigger
+              value="about"
+              className="bg-secondary hover:bg-tertiary data-[state=active]:bg-accent data-[state=active]:text-primary transition-all duration-300"
+            >
+              About me
+            </TabsTrigger>
           </TabsList>
 
           {/* content */}
@@ -212,8 +241,10 @@ const Resume = () => {
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <h3 className="text-4xl font-bold text-text-primary">
+                  {experience.title}
+                </h3>
+                <p className="max-w-[600px] text-text-muted mx-auto xl:mx-0">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -222,16 +253,15 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-secondary hover:bg-tertiary transition-colors duration-300 h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left text-text-primary">
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
-                            {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
+                            <p className="text-text-muted">{item.company}</p>
                           </div>
                         </li>
                       );
@@ -244,8 +274,10 @@ const Resume = () => {
             {/* education */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <h3 className="text-4xl font-bold text-text-primary">
+                  {education.title}
+                </h3>
+                <p className="max-w-[600px] text-text-muted mx-auto xl:mx-0">
                   {education.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -254,16 +286,17 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-secondary hover:bg-tertiary transition-colors duration-300 h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left text-text-primary">
                             {item.degree}
                           </h3>
                           <div className="flex items-center gap-3">
-                            {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.institution}</p>
+                            <p className="text-text-muted">
+                              {item.institution}
+                            </p>
                           </div>
                         </li>
                       );
@@ -277,8 +310,10 @@ const Resume = () => {
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                  <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <h3 className="text-4xl font-bold text-text-primary">
+                    {skills.title}
+                  </h3>
+                  <p className="max-w-[600px] text-text-muted mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
@@ -288,8 +323,8 @@ const Resume = () => {
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                            <TooltipTrigger className="w-full h-[180px] bg-secondary hover:bg-tertiary transition-colors duration-300 rounded-xl flex justify-center items-center group">
+                              <div className="text-7xl text-text-primary group-hover:text-accent transition-all duration-300">
                                 {skill.icon}
                               </div>
                             </TooltipTrigger>
@@ -311,8 +346,10 @@ const Resume = () => {
               className="w-full text-center xl:text-left"
             >
               <div className="flex flex-col gap-[30px]">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <h3 className="text-4xl font-bold text-text-primary">
+                  {about.title}
+                </h3>
+                <p className="max-w-[600px] text-text-muted mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
@@ -322,8 +359,12 @@ const Resume = () => {
                         key={index}
                         className="flex items-center justify-center xl:justify-start gap-4"
                       >
-                        <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
+                        <span className="text-text-muted">
+                          {item.fieldName}
+                        </span>
+                        <span className="text-xl text-text-primary">
+                          {item.fieldValue}
+                        </span>
                       </li>
                     );
                   })}

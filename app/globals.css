@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 @layer base {
+  ::selection {
+    @apply bg-white text-primary; /* White background, dark text */
+  }
+
+  /* For Firefox */
+  ::-moz-selection {
+    @apply bg-white text-primary; /* White background, dark text */
+  }
+
   body {
     @apply font-primary bg-primary text-white leading-loose;
   }
@@ -20,6 +29,6 @@
   }
 
   .text-outline-hover {
-    -webkit-text-stroke: 1px #00ff99;
+    -webkit-text-stroke: 1px #ff7a00;
   }
 }

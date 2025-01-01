@@ -11,8 +11,9 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
         <Link href="/">
-          <h1 className="text-4xl font-semibold">
-            Luke<span className="text-accent">.</span>
+          <h1 className="text-2xl font-semibold">
+            Art<span className="text-accent">Beckett</span>
+            <span className="font-light">.dev</span>
           </h1>
         </Link>
 
@@ -25,7 +26,7 @@ const Header = () => {
         </div>
 
         {/* mobile nav */}
-        <div className="xl:hidden">
+        <div className="xl:hidden mr-2">
           <MobileNav />
         </div>
       </div>

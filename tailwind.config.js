@@ -24,11 +24,28 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#1c1c22",
+        primary: "#1E1815",
+        secondary: "#2A2320",
+        tertiary: "#2A2422",
         accent: {
-          DEFAULT: "#00ff99",
-          hover: "#00e187",
+          DEFAULT: "#FF7A00",
+          hover: "#E56E00",
+          animation: "#FF8F2E",
         },
+        text: {
+          primary: "#FFFFFF",
+          secondary: "#E5E5E5",
+          muted: "rgba(255, 255, 255, 0.75)",
+          accent: "#FF7A00",
+        },
+        border: {
+          DEFAULT: "#3D3532",
+          light: "rgba(255, 255, 255, 0.1)",
+        },
+      },
+      backgroundColor: {
+        card: "#231815",
+        hover: "#2A2422",
       },
 
       keyframes: {

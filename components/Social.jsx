@@ -1,12 +1,15 @@
 import Link from "next/link";
 
-import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaFacebookF, FaBlog } from "react-icons/fa";
 
 const socials = [
-  { icon: <FaGithub />, path: "" },
-  { icon: <FaLinkedinIn />, path: "" },
-  { icon: <FaYoutube />, path: "" },
-  { icon: <FaTwitter />, path: "" },
+  { icon: <FaGithub />, path: "https://github.com/Wizard-Fingers" },
+  {
+    icon: <FaLinkedinIn />,
+    path: "https://www.linkedin.com/in/art-beckett-3b19b7209/",
+  },
+  { icon: <FaFacebookF />, path: "https://www.facebook.com/arthur.b.beckett/" },
+  // { icon: <FaBlog />, path: "" },
 ];
 
 const Social = ({ containerStyles, iconStyles }) => {
