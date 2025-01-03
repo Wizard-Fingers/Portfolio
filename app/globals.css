@@ -3,27 +3,53 @@
 @tailwind utilities;
 
 @layer base {
+  /* Text Selection Styles */
   ::selection {
-    @apply bg-white text-primary; /* White background, dark text */
+    @apply bg-white text-primary;
   }
 
-  /* For Firefox */
   ::-moz-selection {
-    @apply bg-white text-primary; /* White background, dark text */
+    @apply bg-white text-primary;
   }
 
+  /* Custom Scrollbar Styles */
+  ::-webkit-scrollbar {
+    width: 6px; /* Made thinner */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent; /* Using your accent color */
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-secondary; /* Using your secondary color */
+    border-radius: 3px;
+  }
+
+  /* Firefox Scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--secondary);
+  }
+
+  /* Rest of your styles... */
   body {
     @apply font-primary bg-primary text-white leading-loose;
   }
+
   .h1 {
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
   }
+
   .h2 {
     @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
   }
+
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
+
   .text-outline {
     -webkit-text-stroke: 1px #ffffff;
   }

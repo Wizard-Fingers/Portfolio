@@ -7,10 +7,7 @@ const PageTransition = ({ children }) => {
   const pathname = usePathname();
   return (
     <AnimatePresence>
-      <div key={pathname} className="min-h-screen bg-primary">
-        {" "}
-        {/* Added min-h-screen and bg-primary */}
-        {/* Main transition layer */}
+      <div key={pathname} className="sm-min-h-screen bg-primary">
         <motion.div
           initial={{ opacity: 1 }}
           animate={{
