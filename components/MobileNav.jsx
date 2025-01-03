@@ -19,10 +19,6 @@ const links = [
     name: "resume",
     path: "/resume",
   },
-  // {
-  //   name: "work",
-  //   path: "/work",
-  // },
   {
     name: "contact",
     path: "/contact",
@@ -42,9 +38,13 @@ const MobileNav = () => {
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col">
+      <SheetContent className="flex flex-col pt-8">
+        {" "}
+        {/* Added pt-8 */}
         {/* logo */}
-        <div className="mt-32 mb-40 text-center text-2xl">
+        <div className="mb-12 text-center text-2xl">
+          {" "}
+          {/* Changed mt-32 mb-40 to mb-12 */}
           <Link href="/" onClick={handleLinkClick}>
             <h1 className="text-2xl font-semibold">
               Art<span className="text-accent">Beckett</span>
@@ -53,7 +53,7 @@ const MobileNav = () => {
           </Link>
         </div>
         {/* nav */}
-        <nav className="flex flex-col justify-center items-center gap-8">
+        <nav className="flex flex-col items-center gap-8">
           {links.map((link, index) => {
             return (
               <Link
