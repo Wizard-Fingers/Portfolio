@@ -86,7 +86,7 @@ const Contact = () => {
           opacity: 1,
           transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
         }}
-        className="py-6 bg-primary"
+        className="min-h-screen py-6 bg-primary"
       >
         <div className="container mx-auto">
           <div className="flex flex-col xl:flex-row gap-[30px]">
